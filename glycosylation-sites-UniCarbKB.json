@@ -1,6 +1,6 @@
 {
     "bco_id": "https://w3id.org/biocompute/examples/glycosylation-sites-UniCarbKB",
-    "checksum": "AEC8F79CBC38A2E13E3814A13A26E735642482540D5A42A16A8E7D5FA331CA30",
+    "checksum": "D231C92C660CD1DD818D412E10F86F07338BA730FBE6898EF8F7DF1B1ECBFD3C",
     "bco_spec_version" : "https://w3id.org/biocompute/spec/1.3.0",
     "provenance_domain":{
         "name": "glycosylation-sites-UniCarbKB",
@@ -126,7 +126,7 @@
                 ]
             }
         ]
-    },
+        },
     "execution_domain":{
         "script":[
             {

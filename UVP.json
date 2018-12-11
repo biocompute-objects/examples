@@ -1,6 +1,6 @@
 {
     "bco_id": "https://github.com/biocompute-objects/UVP-BCO/blob/master/UVP_BCO.json",
-    "checksum": "B5F77857FB88D86817F4A651283DE2F9AE896861BC695280E94829FA6B2F9A39",
+    "checksum": "8098B0E9BF2D8D98A0F3C200774A8BD8E228064F56BFB81DEEE432BB2252B014",
     "bco_spec_version": "https://w3id.org/biocompute/spec/1.3.0",
     "provenance_domain": {
         "name": "Lineage assignment for an isolate of M. tuberculosis based on its single nucleotide polymorphism (SNP) profile based on UVC v1.0.",
@@ -655,9 +655,9 @@
             {
                 "uri": {
                     "uri": "https://github.com/CPTR-ReSeqTB/UVP/commit/9e8f588b3cd3f5eebde29f7d2879e1a1e1c1aed3"
+                }
             }
-        }
-    ],
+        ],
         "script_driver": "Python",
         "software_prerequisites": [
             {

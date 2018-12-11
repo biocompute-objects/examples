@@ -227,9 +227,9 @@
                 "name": "BWA",
                 "description": "Aligns sequence reads to reference genome",
                 "version": "0.7.12",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "M. tuberculosis H37Rv genome reference file",
+                        "name": "M. tuberculosis H37Rv genome reference file",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/NC_000962.fa"
                         }
@@ -433,9 +433,9 @@
                 "name": "IndelRealigner",
                 "description": "Perfoms re-alignment around insertions and deletions",
                 "version": "3.4.0",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "M. tuberculosis H37Rv genome reference file",
+                        "name": "M. tuberculosis H37Rv genome reference file",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/NC_000962.fa"
                         }
@@ -457,15 +457,15 @@
                 "name": "BaseRecalibrator",
                 "description": "Recalibrates base quality scores",
                 "version": "3.4.0",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "M. tuberculosis H37Rv genome reference file",
+                        "name": "M. tuberculosis H37Rv genome reference file",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/NC_000962.fa"
                         }
                     },
                     {
-                        "filename": "Variation sites file",
+                        "name": "Variation sites file",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/snps.vcf"
                         }
@@ -503,9 +503,9 @@
                 "name": "UnifiedGenotyper",
                 "description": "Calls variant positions in alignment",
                 "version": "3.4.0",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "M. tuberculosis H37Rv genome reference file",
+                        "name": "M. tuberculosis H37Rv genome reference file",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/NC_000962.fa"
                         }
@@ -530,10 +530,9 @@
                 "name": "VCFtools",
                 "description": "Filters raw VCF to exclude poor quality variants",
                 "version": "0.1.12b",
-                "tool_package": "VCFtools",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "Excluded list file",
+                        "name": "Excluded list file",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/excluded_loci.txt"
                         }
@@ -555,9 +554,9 @@
                 "name": "SnpEff",
                 "description": "Annotates variants in VCF file",
                 "version": "4.1",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "M. tuberculosis H37Rv GenBank File",
+                        "name": "M. tuberculosis H37Rv GenBank File",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/NC_000962.gbk"
                         }
@@ -595,9 +594,9 @@
                 "name": "lineage_parser.py",
                 "description": "Assigns Mycobacterium tuberculosis Complex lineage to isolate",
                 "version": "",
-                "prerequisites": [
+                "prerequisite": [
                     {
-                        "filename": "Lineage Markers File",
+                        "name": "Lineage Markers File",
                         "uri": {
                             "uri": "http://bco.reseqtb.org/UVP-BCO/UVPv2.4.1_reference_files/lineage_markers.txt"
                         }
@@ -652,9 +651,13 @@
         ]
     },
     "execution_domain": {
-        "script": {
-            "uri": "https://github.com/CPTR-ReSeqTB/UVP/commit/9e8f588b3cd3f5eebde29f7d2879e1a1e1c1aed3"
-        },
+        "script": [
+            {
+                "uri": {
+                    "uri": "https://github.com/CPTR-ReSeqTB/UVP/commit/9e8f588b3cd3f5eebde29f7d2879e1a1e1c1aed3"
+            }
+        }
+    ],
         "script_driver": "Python",
         "software_prerequisites": [
             {

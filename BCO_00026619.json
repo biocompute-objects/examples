@@ -1,0 +1,343 @@
+{
+    "object_id": "https://portal.aws.biochemistry.gwu.edu/bco/BCO_00026619",
+    "spec_version": "https://w3id.org/ieee/ieee-2791-schema/",
+    "etag": "cf70ebc1d26bbb2ea69ab0178b6234c33c4d5c8761f9a51452b8940111ad0f9c",
+    "description_domain": {
+        "keywords": [
+            "HIVE-hexagon",
+            "alignment",
+            "dna-se",
+            "human",
+            "test-computation"
+        ],
+        "platform": [
+            "HIVE"
+        ],
+        "xref": [
+            {
+                "access_time": "2020-01-16T00:00:00-0400",
+                "namespace": "PRJNA",
+                "name": "BioProject",
+                "ids": [
+                    "222266"
+                ]
+            }
+        ],
+        "pipeline_steps": [
+            {
+                "step_number": 1,
+                "description": "HIVE hexagon alignment engine optimized for HIVE cloud performance on Next Generation data",
+                "input_list": [
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3244"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=731"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=729"
+                    }
+                ],
+                "name": "HIVE-Hexagon",
+                "output_list": [
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordBodyContainer_stat"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=histogram.csv"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordContainer_stat"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordContainer_subject"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.hiveal"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordContainer_align"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordBodyContainer_match"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_hash"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordContainer_match"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordRelationContainer_subject_0"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordContainer_repeat"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=coverage_dict"
+                    },
+                    {
+                        "uri": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=3260&filename=alignment.0.vioal_recordBodyContainer_align"
+                    }
+                ]
+            }
+        ]
+    },
+    "error_domain": {
+        "empirical_error": {
+            "text": " 563219 sequences aligned "
+        },
+        "algorithmic_error": {
+            "text": "NA"
+        }
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "url": "https://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=login",
+                "name": "HIVE"
+            }
+        ],
+        "environment_variables": [
+            {
+                "key": "HOSTTYPE",
+                "value": "x86_64-linux"
+            }
+        ],
+        "script_driver": "FILL",
+        "software_prerequisites": [
+            {
+                "name": "HIVE-hexagon",
+                "version": "babajanian.1",
+                "uri": {
+                    "uri": "http://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500",
+                    "sha1_checksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
+                }
+            }
+        ],
+        "script": [
+            {
+                "uri": {
+                    "uri": "http://hive.aws.biochemistry.gwu.edu/dna.cgi?cmd=dna-hexagon&cmdMode=-"
+                }
+            }
+        ]
+    },
+    "extension_domain": [],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "parametric_domain": [
+        {
+            "step": "1",
+            "value": "svc-align-hexagon",
+            "param": "_type"
+        },
+        {
+            "step": "1",
+            "value": "1_SRR1004397_2.fastq versus GrCH38.2 MARCH14-2016",
+            "param": "name"
+        },
+        {
+            "step": "1",
+            "value": "1",
+            "param": "alignmentEngine"
+        },
+        {
+            "step": "1",
+            "value": "{\"allowShorterEnds\":0,\"costGapNext\":-4,\"costGapOpen\":-12,\"costMatch\":5,\"costMismatch\":-4,\"costMismatchNext\":-6,\"isglobal\":0,\"seed\":14}",
+            "param": "alignParam"
+        },
+        {
+            "step": "1",
+            "value": "{\"searchRepeatsAndTrans\":0}",
+            "param": "basicAlgParam"
+        },
+        {
+            "step": "1",
+            "value": "{\"complexityQry\":{\"11.0.0\":{\"complexityEntropy\":0,\"complexityWindow\":0,\"maximumPercentLowQualityAllowed\":0}},\"complexityRef\":{\"11.1.0\":{\"complexityRefEntropy\":0,\"complexityRefWindow\":0,\"acceptNNNQuaTrheshold\":0}}}",
+            "param": "complexity"
+        },
+        {
+            "step": "1",
+            "value": "auto",
+            "param": "computeDiagonalWidth"
+        },
+        {
+            "step": "1",
+            "value": "false",
+            "param": "doubleHash"
+        },
+        {
+            "step": "1",
+            "value": "1",
+            "param": "doubleStagePerfect"
+        },
+        {
+            "step": "1",
+            "value": "auto",
+            "param": "hashCompileStp"
+        },
+        {
+            "step": "1",
+            "value": "auto",
+            "param": "hashStp"
+        },
+        {
+            "step": "1",
+            "value": "1",
+            "param": "isbackward"
+        },
+        {
+            "step": "1",
+            "value": "0",
+            "param": "isextendtails"
+        },
+        {
+            "step": "1",
+            "value": "1",
+            "param": "isoptimize"
+        },
+        {
+            "step": "1",
+            "value": "3",
+            "param": "keepAllMatches"
+        },
+        {
+            "step": "1",
+            "value": "66",
+            "param": "looseExtenderMinimumLengthPercent"
+        },
+        {
+            "step": "1",
+            "value": "25",
+            "param": "looseExtenderMismatchesPercent"
+        },
+        {
+            "step": "1",
+            "value": "0",
+            "param": "maxExtensionGaps"
+        },
+        {
+            "step": "1",
+            "value": "50",
+            "param": "maxHashBin"
+        },
+        {
+            "step": "1",
+            "value": "200",
+            "param": "maxHitsPerRead"
+        },
+        {
+            "step": "1",
+            "value": "all",
+            "param": "maxNumberQuery"
+        },
+        {
+            "step": "1",
+            "value": "{\"28.0\":{\"minMatchLen\":45,\"minMatchUnit\":0}}",
+            "param": "minMatch"
+        },
+        {
+            "step": "1",
+            "value": "{\"29.0\":{\"maxMissQueryPercent\":5,\"considerGoodSubalignments\":1}}",
+            "param": "mismatches"
+        },
+        {
+            "step": "1",
+            "value": "0",
+            "param": "random_seed"
+        },
+        {
+            "step": "1",
+            "value": "{\"resolveConfictsUnique\":false,\"resolveConflicts\":1,\"resolveConflictsScore\":1}",
+            "param": "readconflicts"
+        },
+        {
+            "step": "1",
+            "value": "0",
+            "param": "reverseEngine"
+        },
+        {
+            "step": "1",
+            "value": "None",
+            "param": "scoreFilter"
+        },
+        {
+            "step": "1",
+            "value": "1",
+            "param": "selfQueryPosJumpInNonPerfectAlignment"
+        },
+        {
+            "step": "1",
+            "value": "{\"44.0\":{\"trimLowScoreEndsWindow\":0}}",
+            "param": "trimLowScoreEnds"
+        },
+        {
+            "step": "1",
+            "value": "1",
+            "param": "useRedundSim"
+        },
+        {
+            "step": "1",
+            "value": "svc-align-hexagon",
+            "param": "alignSelector"
+        },
+        {
+            "step": "1",
+            "value": "false",
+            "param": "force_reindex"
+        }
+    ],
+    "provenance_domain": {
+        "embargo": {},
+        "name": "HIVE-hexagon Test Computation",
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+        "review": [
+            {
+                "date": "2020-01-29T00:00:00-0400",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0003-1409-4549",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "contributedBy"
+                    ],
+                    "name": "FILL",
+                    "email": "hadley_king@gwu.edu"
+                },
+                "status": "unreviewed"
+            }
+        ],
+        "version": "1.0.0",
+        "contributors": [
+            {
+                "orcid": "https://orcid.org/0000-0002-8824-4637",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "name": "Janisha Patel",
+                "email": "janishapatel@gwu.edu"
+            },
+            {
+                "affiliation": "Creator",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "demouser@demouser.com",
+                "name": "Demo User",
+                "orcid": ""
+            }
+        ],
+        "created": "2020-12-24T03:30:50.517Z",
+        "modified": "2020-12-24T03:30:50.517Z"
+    },
+    "usability_domin": [
+        "This curated test computation evaluates the performance of Hexagon, a sequence alignment tool that allows the user to align reads from a high throughput experiment to a reference genome. Hexagon was used to align human DNA samples from Whole Exome Sequencing of lung squamous carcinoma (SQCC) patients against human reference genome GRCh38."
+    ]
+}
